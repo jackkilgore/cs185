@@ -4,8 +4,7 @@
 
 body 
 {
-   background: #64305d50;  /*  url("../assets/snake-sketch.jpg") no-repeat scroll 0cm 2cm; */
-
+    background: #64305d50;  /*  url("../assets/snake-sketch.jpg") no-repeat scroll 0cm 2cm; */
 }
 
 h1.title
@@ -65,10 +64,23 @@ span.emphasis
 
 p
 {
+    color: 1a251b;
+
+    font-family: Times, Cambria, Cochin, Georgia,'Times New Roman', serif;
     /* text-indent: 30px; */
     text-align: center; /* right | center | justify */
     /* font-size: x-large; */
     padding: 20px 80px 20px 80px;
+}
+
+p.list
+{
+    color: #1a251b;
+
+    font-family: Times, Cambria, Cochin, Georgia,'Times New Roman', serif;
+    text-align: justify; /* right | center | justify */
+    /* font-size: x-large; */
+    padding: 0px 80px 0px 20px;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -79,6 +91,13 @@ p
         /* font-size: xx-large; */
         padding: 20px 50px 20px 50px;
     }
+
+    p.list
+{
+    text-align: justify; /* right | center | justify */
+    /* font-size: x-large; */
+    padding: 0px 20px 0px 20px;
+}
 } 
 
 .tab 
