@@ -51,12 +51,6 @@ span.emphasis
     font-weight: 300;
 }
 
-span.italics
-{
-    font-variant: italic;
-}
-
-
 
 /* Cannot have two elements with the same id in one document. */
 #c1-2
