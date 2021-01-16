@@ -64,7 +64,7 @@ span.emphasis
 
 p
 {
-    color: 1a251b;
+    color: #1a251b;
 
     font-family: Times, Cambria, Cochin, Georgia,'Times New Roman', serif;
     /* text-indent: 30px; */
@@ -86,18 +86,19 @@ p.list
 @media only screen and (max-device-width: 480px) {
     p
     {
+        color: #1a251b;
         /* text-indent: 30px; */
         text-align: center; /* right | center | justify */
         /* font-size: xx-large; */
         padding: 20px 50px 20px 50px;
     }
 
-    p.list
-{
-    text-align: justify; /* right | center | justify */
-    /* font-size: x-large; */
-    padding: 0px 20px 0px 20px;
-}
+    p.list {
+        color: #1a251b;
+        text-align: justify; /* right | center | justify */
+        /* font-size: x-large; */
+        padding: 0px 20px 0px 20px;
+    }
 } 
 
 .tab 
