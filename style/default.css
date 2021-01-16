@@ -51,6 +51,11 @@ span.emphasis
     font-weight: 300;
 }
 
+span.italics
+{
+    font-variant: italic;
+}
+
 
 
 /* Cannot have two elements with the same id in one document. */
@@ -68,8 +73,19 @@ p
 {
     /* text-indent: 30px; */
     text-align: center; /* right | center | justify */
+    /* font-size: x-large; */
     padding: 20px 80px 20px 80px;
 }
+
+@media only screen and (max-device-width: 480px) {
+    p
+    {
+        /* text-indent: 30px; */
+        text-align: center; /* right | center | justify */
+        /* font-size: xx-large; */
+        padding: 20px 50px 20px 50px;
+    }
+} 
 
 .tab 
 {
@@ -100,4 +116,14 @@ background-color: rgba(35, 49, 36, 0.171);
 .tab button.active 
 {
 background-color: #ccc;
+}
+
+
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
 }
