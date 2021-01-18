@@ -21,11 +21,35 @@ h1.title
 
 }
 
+h2.title
+{
+    color: #253626;
+    font-family: Times, Cambria, Cochin, Georgia,'Times New Roman', serif;
+    font-variant: normal; /* normal / small-caps */
+}
+
 img.title_img
 {
     max-width: 100%;
     display:block;
 }
+
+img
+{
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.content-line{ /* New line of photos */
+    text-align: center;
+}
+.content-atom{ /* Each photo on new line */
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 5px;
+}
+
 
 /* use span to group one liners and div to group multiliners */
 span.small
