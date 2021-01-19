@@ -2,6 +2,5 @@
 Winter 2021 Human Computer Interaction
 
 
-## Notes on WEBP
-Use `cwebp` to convert from jpg/png to webp
-use `dwebp` to convert from webp to jpg/png
+## Notes on Compressing
+`sips --resampleHeight 600 *.jpg`
