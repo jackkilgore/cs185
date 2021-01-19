@@ -157,11 +157,35 @@ background-color: #ccc;
 }
 
 
-
 footer {
     text-align: center;
     position: fixed;
     bottom:0;
     width:100%;
     height:60px;   /* Height of the footer */
+}
+
+
+.thumbnail 
+{
+    width:100%; 
+    height:100%; 
+    margin: -9.5% 0px -12%;
+}
+
+.playbutton
+{
+    width:100%;
+    height:100%; 
+}
+.playbutton:after 
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 120px;
+    z-index: 100;
+    background: transparent url(../workspace/iconfinder_play_alt_118620.png) no-repeat center;
+    pointer-events: none;
 }
