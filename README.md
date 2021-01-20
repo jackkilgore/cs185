@@ -7,3 +7,4 @@ Winter 2021 Human Computer Interaction
 
 ## Lazy Loading Embedded Video
 https://css-tricks.com/lazy-load-embedded-youtube-videos/
+https://codepen.io/jelle619/pen/yLBVyWY
