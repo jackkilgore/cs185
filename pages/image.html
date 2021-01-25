@@ -6,11 +6,9 @@
 	<title>
 		cs185 page
 	</title>
-	<meta charset="utf-8"/>
+	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="../style/default.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-
 </head>
 
 <body>
@@ -26,13 +24,19 @@
 	<div id="content">
 		<!---The Lights--->
 		<h2 align="center" class="title">012021 - the lights (near montrose)</h2>
+
+		<div id="Lightbox" class="modal">
+			<img id="sick" class="zoom" style="top:80%" src="../assets/the-lights_5.jpg" height="600px" onclick="openImage();" />
+		</div>
+
+
 		<div class="content-line">
 			<div class="content-atom">
-				<a href="../assets/the-lights_5.jpg">
-					<div style="height: 300px">
-						<img src="../assets/compress/the-lights_5.jpg">
-					</div>
-				</a>
+				<!-- <a href="../assets/the-lights_5.jpg"> -->
+				<div style="height: 300px">
+					<img id="test" src="../assets/compress/the-lights_5.jpg" onclick='openImage("sick");' />
+				</div>
+				<!-- </a> -->
 			</div>
 			<div class="content-atom">
 				<a href="../assets/the-lights_2.jpg">
@@ -51,11 +55,11 @@
 				</a>
 			</div>
 			<div class="content-atom">
-				<a href="../assets/the-lights_3.jpg">
-					<div style="height: 300px">
-						<img src="../assets/compress/the-lights_3.jpg">
-					</div>
-				</a>
+				<!-- <a href="../assets/the-lights_3.jpg"> -->
+				<div style="height: 300px">
+					<img id="test1" src="../assets/compress/the-lights_3.jpg" onclick='openImage("sick");'>
+				</div>
+				<!-- </a> -->
 			</div>
 			<div class="content-atom">
 				<a href="../assets/the-lights_4.jpg">
@@ -287,6 +291,7 @@
 		<a href="../index.html">home</a>
 	</div>
 
+	<script src="../scripts/expand_image.js"></script>
 </body>
 
 
