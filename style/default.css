@@ -35,26 +35,37 @@ img.title_img
 {
     max-width: 100%;
     display:block;
+    cursor:default;
 }
 
 img
 {
     max-width: 100%;
     max-height: 100%;
+    cursor: pointer;
 }
+
 
 img.zoom
 {
+    /* display:inline-block;
+    text-align: center; */
+    height: 96%;
     position:fixed;
-    left:50%;
-    right:0;
-    bottom:0;
     margin:auto;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
+    padding-top: 2%;
+    cursor:default;
+    bottom: 2%;
+}
+@media only screen and (max-device-width: 480px) {
+img.zoom
+{
+    height: 100%;
 }
 
 
-
+}
 
 
 .modal {
@@ -65,6 +76,7 @@ img.zoom
     top: 25%;
     bottom:0%;
     */
+    text-align: center;
     left: 0;
     top:0;
     width: 100%;
