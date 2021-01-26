@@ -59,23 +59,27 @@ img.zoom
     bottom: 2%;
 }
 @media only screen and (max-device-width: 480px) {
-img.zoom
-{
-    height: 100%;
+    img.zoom
+    {
+        height: 100%;
+    }
 }
 
-
+iframe.thumb {
+    display:inline-block;
+   text-align: center;
+   height: 85%;
+   width: 85%;
+   position:fixed;
+   margin:auto;
+   transform: translate(-50%, 0%);
+   padding-top: 3.5%;
+   cursor:default;
+   /* bottom: 2%; */
 }
 
 
 .modal {
-    /*
-     z-index: 1;
-    padding: 10px 62px 0px 62px;
-    
-    top: 25%;
-    bottom:0%;
-    */
     text-align: center;
     left: 0;
     top:0;
@@ -86,7 +90,7 @@ img.zoom
     position: fixed;
     background-color:rgba(0,0,0,0.45);
     margin:auto;
-    z-index:1;
+    z-index:5;
 }
 
 
@@ -96,9 +100,19 @@ img.zoom
 .content-atom{ /* Each photo on new line */
     display: inline-block;
     margin: 5px 5px;
-    padding: 5px;
+    /* padding: 5px; */
+    position: relative;
 }
 
+.content-iframe{
+    position:absolute; 
+    top:0; 
+    left:0; 
+    display:inline-block; 
+    width : 320px; 
+    height: 240px; 
+    z-index:3;
+}
 
 /* use span to group one liners and div to group multiliners */
 span.small
