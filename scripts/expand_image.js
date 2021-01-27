@@ -36,3 +36,11 @@ function closeImage() {
   window.removeEventListener('click', clicker);
   isReady = false;
 }
+
+function preloadImage(url)
+{
+    var img=new Image();
+    img.src=url;
+}
+
+// preloadImage("../assets/012020_marisa-gets-close_3.jpg")

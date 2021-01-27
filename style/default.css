@@ -92,7 +92,7 @@ iframe.thumb {
 }
 .content-atom{ /* Each photo on new line */
     display: inline-block;
-    margin: 5px 5px;
+    /* margin: 5px 5px; */
     /* padding: 5px; */
     position: relative;
 }

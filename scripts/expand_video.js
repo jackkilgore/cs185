@@ -31,3 +31,5 @@ function closeImage() {
   window.removeEventListener('click', clicker);
   isReady = false;
 }
+
+
