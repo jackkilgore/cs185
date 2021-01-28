@@ -43,4 +43,4 @@ function preloadImage(url)
     img.src=url;
 }
 
-// preloadImage("../assets/012020_marisa-gets-close_3.jpg")
+preloadImage("../assets/the-lights_5.jpg");
