@@ -5,7 +5,6 @@ import React from 'react';
 import {useState} from 'react';
 
 
-import logo from './logo.svg';
 import TabList from './Components/TabList'
 import {BodyTitle, Body} from './Body'
 
@@ -40,7 +39,7 @@ class ScrollButton extends React.Component {
 	}
 	
 	render () {
-		if(this.state.visible == true)
+		if(this.state.visible === true)
 		{
 
 			return (<button onclick="topFunction()" id="to_top_btn"

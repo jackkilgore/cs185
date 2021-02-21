@@ -12,15 +12,15 @@ class Body extends Component {
     render() {
         var display_content = ()=> {
             var active_tab = this.props.active_tab;
-            if( active_tab == 1) {
+            if( active_tab === 1) {
                 return <TextBody/>
-            } else if( active_tab == 2) {
+            } else if( active_tab === 2) {
                 return <ImageBody/>
-            } else if (active_tab == 3) {
+            } else if (active_tab === 3) {
                 return <VideoBody/>
-            } else if (active_tab == 4) {
+            } else if (active_tab === 4) {
                 return <TableBody/>
-            } else if (active_tab == 5) {
+            } else if (active_tab === 5) {
                 return <EmailBody/>
             } else  {
                 return <HomeBody/>
@@ -36,15 +36,15 @@ class BodyTitle extends Component {
     render() {
         var display_content = ()=> {
             var active_tab = this.props.active_tab;
-            if( active_tab == 1) {
+            if( active_tab === 1) {
                 return <TextTitle/>
-            } else if( active_tab == 2) {
+            } else if( active_tab === 2) {
                 return <ImageTitle/>
-            } else if (active_tab == 3) {
+            } else if (active_tab === 3) {
                 return <VideoTitle/>
-            } else if (active_tab == 4) {
+            } else if (active_tab === 4) {
                 return <TableTitle/>
-            } else if (active_tab == 5) {
+            } else if (active_tab === 5) {
                 return <EmailTitle/>
             } else  {
                 return <HomeTitle/>

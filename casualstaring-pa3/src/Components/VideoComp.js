@@ -3,9 +3,6 @@ import "../default.css";
 
 export default class YTVideoComp extends React.Component {
 
-  constructor(props) {
-    super(props);
-  }
   state = { isOpen: false };
 
   thumbnail_style="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto; cursor:pointer;}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>"
@@ -22,7 +19,7 @@ export default class YTVideoComp extends React.Component {
     return (
       <div>
         <div className="content-atom"  onClick={this.handleShowDialog}>
-            <iframe width={this.props.width} height={this.props.height}
+            <iframe title="Thumbnail" width={this.props.width} height={this.props.height}
                 srcDoc={this.thumb_src}>
             </iframe>
             <div class="content-iframe"></div>
@@ -32,7 +29,7 @@ export default class YTVideoComp extends React.Component {
         {this.state.isOpen && (
           <div id="Lightbox" class="modal" style={{display : 'block'}} onClick={this.handleShowDialog}>
           <div className="content-atom" >
-              <iframe className="thumb" id="sick" src={this.props.src} frameborder="0"
+              <iframe title="Expanded Thumbnail" className="thumb" id="sick" src={this.props.src} frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
           </div>

@@ -2,9 +2,6 @@ import React from "react";
 import "../default.css";
 export default class ImageComp extends React.Component {
 
-  constructor(props) {
-    super(props);
-  }
   state = { isOpen: false };
 
   handleShowDialog = () => {
@@ -23,12 +20,12 @@ export default class ImageComp extends React.Component {
           className="small"
           src= {comp}
           onClick={this.handleShowDialog}
-          alt="no image"
+          alt=""
         />
         </div>
         {this.state.isOpen && !isMobile &&(
           <div id="Lightbox" className="modal" style={{display : 'block'}} onClick={this.handleShowDialog}>
-			      <img id="sick" src={expand} className="zoom"   />
+			      <img id="sick" src={expand} className="zoom" alt=""  />
 		      </div>
         )}
          

@@ -9,9 +9,6 @@ function EmailTitle() {
 }
 
 class EmailBody extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     state = { email: "" , display_text:""};
 
@@ -20,7 +17,7 @@ class EmailBody extends Component {
         var format = /\w+@\w+\.(edu|com)/;
       
         var is_valid = false;
-        if (this.state.email.search(format) != -1) {
+        if (this.state.email.search(format) !== -1) {
           is_valid = true;
         }
       
