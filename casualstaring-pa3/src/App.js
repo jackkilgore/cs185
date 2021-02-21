@@ -10,7 +10,7 @@ import {BodyTitle, Body} from './Body'
 
 class ScrollButton extends React.Component {
 	state = {
-		visible: true,
+		visible: false,
 	  }
 	
 	  scrollToTop = () => {

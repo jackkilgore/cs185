@@ -12,7 +12,7 @@ export default class ImageComp extends React.Component {
     var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i)
     var comp=this.props.src;
     var expand = comp.substr(comp.lastIndexOf('/') + 1);
-    expand = 'assets/' + expand;
+    expand = process.env.PUBLIC_URL + '/assets/' + expand;
     return (
       <div>
         <div style={{height: this.props.height}}>

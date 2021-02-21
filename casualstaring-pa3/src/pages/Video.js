@@ -5,7 +5,7 @@ import YTVideoComp from '../Components/VideoComp'
 function VideoTitle() {
     return (
         <div>
-             <h1 align="center" className="title">casualStaring (Video)</h1>
+             <h1 align="center" className="title">Casual Stare (Video)</h1>
         </div>
     );
 }

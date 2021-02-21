@@ -21,7 +21,7 @@ function HomeBody() {
     return (
         <div>
         <div id="no_margins">
-            <img className="title_img" src="assets/snake-sketch.jpg" height="95%" alt="None" />
+            <img className="title_img" src={process.env.PUBLIC_URL + "/assets/snake-sketch.jpg"} height="95%" alt="None" />
         </div>
         <p className="cover" style={{marginTop: '-10px'}}>
             <b>An Intimate Collection of Casual AV Pairings. </b><br></br>
