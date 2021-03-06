@@ -52,7 +52,7 @@ function TableBody() {
 			</tr>
 			<tr>
 				<td>
-					<a href="https://alexmeinhof.bandcamp.com/">alexmeinhof</a>
+					<a href="https://at-right-angles.blogspot.com/">alexmeinhof</a>
 				</td>
 				<td>
 					"i just want to put this on the record. I think this is a bad idea" -- ameinhof

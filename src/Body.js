@@ -5,6 +5,7 @@ import {ImageBody, ImageTitle} from './pages/Image';
 import {VideoBody, VideoTitle} from './pages/Video';
 import {TableBody, TableTitle} from './pages/Table';
 import {EmailBody, EmailTitle} from './pages/Email';
+import {MeetingsBody, MeetingsTitle} from './pages/Meetings';
 import './default.css';
 
 class Body extends Component {
@@ -22,6 +23,8 @@ class Body extends Component {
                 return <TableBody/>
             } else if (active_tab === 5) {
                 return <EmailBody/>
+            } else if (active_tab === 6) {
+                return <MeetingsBody/>
             } else  {
                 return <HomeBody/>
             } 
@@ -46,7 +49,9 @@ class BodyTitle extends Component {
                 return <TableTitle/>
             } else if (active_tab === 5) {
                 return <EmailTitle/>
-            } else  {
+            } else if (active_tab === 6) {
+                return <MeetingsTitle/>
+            }else  {
                 return <HomeTitle/>
             } 
             

@@ -11,7 +11,6 @@ class TabList extends Component {
                     this.props.ctab} />
             </div>
             {delete this.props.tabs[0]}
-            {console.log(this.props.tabs)}
             <div className="content-line">
                 {this.props.tabs.map(
                     (tab)=>

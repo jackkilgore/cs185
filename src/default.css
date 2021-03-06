@@ -45,6 +45,9 @@ img.zoom
     /* display:inline-block;
     text-align: center; */
     height: 96%;
+    width:auto;
+    /* padding-left: 2%; */
+    /* padding-right: 2%; */
     position:fixed;
     margin:auto;
     transform: translate(-50%, 0%);
