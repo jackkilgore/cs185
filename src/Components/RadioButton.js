@@ -20,7 +20,7 @@ export default function RadioButton() {
               onChange={handleChange} name="mind"/>
             <label htmlFor="three">a bit of both</label>
          </form>
-         <p className="list">You mind is {mind}</p>
+         <p className="list">Your mind is {mind}</p>
       </div>
     );
 }
