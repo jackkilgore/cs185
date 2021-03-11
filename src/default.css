@@ -229,7 +229,7 @@ figcaption
     right: 30px; 
     z-index: 10; 
     border: none; 
-    background-color:rgba(64, 92, 61, 0.884); 
+    background-color:rgba(64, 92, 61,0.884);
     color: #f0f0e8; 
     cursor: pointer; 
     padding: 10px; 
@@ -339,13 +339,12 @@ table
     margin:5px 0;
     padding: 5px 10px;
     font-size: 0.9em;
-    /* min-width: 400px; */
-    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #323831;
     width:30%;
     cursor:pointer;
+    display: block; 
 }
 
 .styled-table td {
@@ -390,6 +389,45 @@ background-color: #3b0a0a;
     width: 100%;
     height: 100%;
 }
+
+.msubmit_btn 
+{
+    margin-left: 10px;
+    text-align: right;
+    background-color: rgba(64, 92, 61,0.9);
+    color: #f0f0e8;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 2px 2px 2px 2px;
+    width: 15%;
+}
+
+  /* Change background color of msubmit_btns on hover */
+.msubmit_btn:hover 
+{
+background-color: rgba(35, 49, 36, 0.171);;
+}
+
+.msubmit_btn a
+{
+    color: #f0f0e8;
+    text-align: center; 
+    font-size: 13px;
+    font-family: Times, Georgia,'Times New Roman', serif;
+    letter-spacing: 2px;
+    text-decoration:none;
+    display: block;     
+    width: 100%;
+    height: 100%;
+}
+
+.errorMsg {
+    color: #cc0000;
+    margin-bottom: 12px;
+  }
  
 #content {
     padding-bottom:60px; /* Height of the footer element */

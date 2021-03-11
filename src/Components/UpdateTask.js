@@ -32,7 +32,7 @@ const UpdateTask = ({task, onUpdate}) => {
 	return(
 	
 	<div>
-	<form className='add-form' onSubmit={onSubmit}>
+	<form className='add-form'>
 		<div className='form-atom'>
 			<label>Title</label>
 			<input type='text'
@@ -51,7 +51,7 @@ const UpdateTask = ({task, onUpdate}) => {
 		<div className='form-atom'>
 			<label>Important</label>
 			<input type='checkbox'
-			value={important} onChange={(e) => setImportant(e.target.value)}/>
+			value={important} onChange={(e) => {console.log(e.target.value); setImportant(e.target.value)}}/>
 		</div>
 		<input type='submit' value='Save' className='button'/>
 	</form>

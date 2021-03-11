@@ -1,7 +1,6 @@
 import '../default.css'
 import TaskList from '../Components/TaskList'
 import AddTask from '../Components/AddTask'
-import UpdateTask from '../Components/UpdateTask'
 
 import React, {useState, useEffect} from 'react'
 
@@ -11,10 +10,8 @@ function MeetingsTitle() {
 
 const MeetingsBody = () => {
 	const [tasks, setTasks] = useState([])
-  const [is_create_meeting, set_create_meeting ] = useState(false)
-  const [is_update_form, set_update_task_form ] = useState(false)
-  const [task_to_update, set_task_to_update] = useState([])
-
+  const [is_create_meeting, set_create_meeting] = useState(false)
+  
   useEffect( () => {
     const getTasks = async () => {
       const tasks_from_server = await fetchTasks()
@@ -65,17 +62,11 @@ const MeetingsBody = () => {
     })
 
     const data = await res.json()
-    setTasks(tasks.map((task) => 
+    setTasks(tasks.map((task) =>
       task.id === upd_task.id ? upd_task : task
       )
     )
-    set_update_task_form(false)
 	}
-
-  const updateTaskForm = async (task) => {
-    set_update_task_form(true)
-    set_task_to_update(task)
-  }
 
   if(!is_create_meeting) {
     return (
@@ -87,10 +78,7 @@ const MeetingsBody = () => {
       </div>
       <div style={{overflow:"hidden"}}>
         <div style={{overflow: "hidden"}}>
-        <TaskList tasks={tasks} onDelete={deleteTask} onUpdate={updateTaskForm}/>
-        </div>
-        <div style={{float: "right"}}>
-        {is_update_form && <UpdateTask style={{float: "right"}} onUpdate={updateTask} task={task_to_update}/>}
+        <TaskList tasks={tasks} onDelete={deleteTask} onUpdate={updateTask}/>
         </div>
       </div>
       </div>
@@ -103,9 +91,7 @@ const MeetingsBody = () => {
         <a>Full Schedule</a>
     </div>
     </div>
-    <div className="content-line">
-    <UpdateTask onUpdate={addTask} task={null}/>
-    </div>
+    <AddTask onAdd={addTask} task={null} create_meeting_state={[is_create_meeting, set_create_meeting]}/>
     </div>
   )
 }
